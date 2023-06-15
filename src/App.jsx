@@ -1,15 +1,23 @@
-import './App.scss'
-import Navbar from './components/navbar/Navbar'
+import { useState, useEffect } from 'react';
+import './style/App.sass'
+import Header from './page/header'
 
 function App() {
 
+  const [typeDisplay, setTypeDisplay] = useState();
+	const breakpoint = 999;
+
+	useEffect(() => {
+		window.innerWidth > breakpoint ? setTypeDisplay(true) : setTypeDisplay(false);
+
+		window.addEventListener("resize", () => {
+			window.innerWidth > breakpoint ? setTypeDisplay(true) : setTypeDisplay(false);
+		});
+	}, []);
+
   return (
     <div className='App'>
-      <header>
-        <Navbar />
-      </header>
-      <main></main>
-      <footer></footer>
+      <Header typeDisplay={typeDisplay} />
     </div>
   )
 }
