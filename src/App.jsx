@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './style/App.sass'
 import Header from './page/header'
+import Banner from './page/banner_section';
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
   return (
     <div className='App'>
       <Header typeDisplay={typeDisplay} />
+	<main>
+		<Banner />
+	</main>
     </div>
   )
 }

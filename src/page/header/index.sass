@@ -1,12 +1,19 @@
 @use '../../style/variables'
 
-.container
+.header
+    position: relative
     padding: 1rem 0
 
     @media screen and ( min-width: 990px )
         padding: 0
 
-    .navbar-collapse
+    .navbar-menu
+        // position: absolute
+        // top: 3rem
+        // left: -40%
+        // transform: translate(50%, 0%)
+        // z-index: 5
+        // width: 88%
         text-align: center
         background: variables.$mobile-menu-bg
         border-radius: 10px

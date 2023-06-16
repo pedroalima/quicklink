@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header({ typeDisplay }) {
     return (
-        <header className="container">
+        <header className="container header">
             <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="Logo" />
@@ -22,7 +22,7 @@ function Header({ typeDisplay }) {
                     >
                     <FontAwesomeIcon icon={faBars} size='xl' />
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
                     {!typeDisplay ? (
                     <>
                         <ul className="navbar-nav mr-auto">
@@ -64,34 +64,6 @@ function Header({ typeDisplay }) {
                     
                 </div>
             </nav>
-            {/* {!typeDisplay ? (
-                    <nav className="row align-items-center">
-                        <div className="col-10">
-                            <h1><img src={logo} alt="Logo" /></h1>
-                        </div>
-                        <div className="col-2">
-                            <picture className='icon-menu'>
-                                <FontAwesomeIcon icon={faBars} size='2xl' />
-                            </picture>
-                        </div>
-                    </nav>
-                ) : (
-                    <nav className="row align-items-center">
-                        <div className="col-1">
-                            <h1><img src={logo} alt="Logo" /></h1>
-                        </div>
-                        <div className="col-8 list">
-                            <a href="#">Features</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">Resources</a>
-                        </div>
-                        <div className="col-3 buttons">
-                            <button className='login'>Login</button>
-                            <button className='sing_up'>Sign Up</button>
-                        </div>
-                    </nav>
-                )
-            } */}
         </header>
     )
 }
