@@ -1,43 +1,35 @@
 @use '../../style/variables'
 
-.row
-    padding: 2rem 0
+.container
+    padding: 1rem 0
 
-    .icon-menu
-        svg
-            color: variables.$font-secondary-color
+    @media screen and ( min-width: 990px )
+        padding: 0
 
-    .list
-        display: flex
-        justify-content: flex-start
-        gap: 1.5rem
-        padding-left: 5rem
+    .navbar-collapse
+        text-align: center
+        background: variables.$mobile-menu-bg
+        border-radius: 10px
+        padding: 2.1rem 1.5rem
+        margin: 1rem 0
 
-        a
-            color: variables.$font-secondary-color
-            font-weight: 700
+        @media screen and ( min-width: 990px )
+            background: none
+            color: red
 
-            &:hover
-                color: variables.$hover-color
+        hr
+            background: variables.$font-secondary-color
+            opacity: 0.3
 
-    .buttons
-        display: flex
-        justify-content: flex-end
-        gap: 1.5rem
+        .form
+            gap: 0.5rem
 
-        .login
-            color: variables.$font-secondary-color
+            .btn-costumer
+                background: variables.$element-effects
+                padding: 0.5rem
 
-            &:hover
-                opacity: 0.5
+                @media screen and ( min-width: 990px )
+                    padding: 0.5rem 1rem
 
-        .sing_up
-            background: variables.$element-effects
-            border-radius: 25px
-
-            padding: 0.5rem 1.3rem
-
-            color: variables.$font-button-color
-
-            &:hover
-                opacity: 0.5
+                    &:hover
+                        opacity: 0.3
