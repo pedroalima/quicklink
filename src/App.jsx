@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './style/App.sass'
-import Header from './page/header'
-import Banner from './page/banner_section';
+import Header from './page/header/Header'
+import Banner from './page/banner_section/Banner';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
     <div className='App'>
       <Header typeDisplay={typeDisplay} />
 	<main>
-		<Banner />
+		<Banner typeDisplay={typeDisplay} />
 	</main>
     </div>
   )

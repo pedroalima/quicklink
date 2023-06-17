@@ -1,4 +1,4 @@
-import './index.sass'
+import './Header.sass'
 import PropTypes from 'prop-types'
 import logo from '../../../public/images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,0 +1,67 @@
+@use '../../style/variables'
+
+.banner
+    @media screen and ( min-width: 990px )
+        height: 80vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+    .row
+        @media screen and ( min-width: 990px )
+            display: flex
+            justify-content: center
+            align-items: center
+
+    .col
+        padding: 0
+
+    &-image
+        width: 100%
+        height: 70vw
+        background-image: url('../../../public/images/illustration-working.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position-x: 15vw
+
+        @media screen and ( min-width: 990px )
+            width: 100%
+            height: 60vh
+            background-image: url('../../../public/images/illustration-working.svg')
+            background-size: cover
+            background-repeat: no-repeat
+            background-position-x: 0vw
+
+    &-content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 0.5rem
+        text-align: center
+        padding: 2rem 0
+
+        @media screen and ( min-width: 1200px )
+            padding: 0 8vw
+            align-items: flex-start
+            text-align: start
+
+        &-title
+            font-weight: 700
+
+            @media screen and ( min-width: 990px )
+                font-size: 70px
+
+        &-description
+            color: variables.$font-secondary-color
+
+        &-button
+            background: variables.$element-effects
+            color: variables.$font-button-color
+            font-weight: 700
+            border-radius: 25px
+            padding: 0.8rem 2rem
+
+            @media screen and ( min-width: 990px )
+                &:hover
+                    opacity: 0.3
