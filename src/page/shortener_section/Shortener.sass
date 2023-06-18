@@ -1,0 +1,128 @@
+@use '../../style/variables'
+
+.shortener
+    padding: 3rem 0
+    margin-top: 5rem
+
+    @media screen and ( min-width: 768px )
+        margin-top: 0
+
+    #form
+        border-radius: 10px
+        background-image: url('../../../public/images/bg-shorten-mobile.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: right
+        background-position-y: -5rem
+
+        padding: 2rem 1rem
+        margin-top: -8rem
+
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+        @media screen and ( min-width: 768px )
+            background-image: url('../../../public/images/bg-shorten-desktop.svg')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: left
+            background-position-y: 0
+
+            margin-top: -6.5rem
+            padding: 2.5rem 2rem
+
+            display: flex
+            flex-direction: row
+            gap: 0
+
+        input
+            border: none
+            padding: 0.5rem
+            border-radius: 5px
+
+        button
+            border-radius: 6px
+            padding: 0.5rem
+
+            @media screen and ( min-width: 768px )
+                &:hover
+                    opacity: 0.3
+
+    #outputs
+        margin-top: 2rem
+        padding: 0.5rem 0
+        border-radius: 8px
+
+        @media screen and ( min-width: 768px )
+            padding: 0.5rem 1rem
+            display: flex
+            align-items: center
+
+        &-link
+            padding-bottom: 0.5rem
+            border-bottom: 1px solid rgb(216, 219, 226)
+
+            @media screen and ( min-width: 768px )
+                padding-bottom: 0
+                border-bottom: none
+
+            span
+                @media screen and ( min-width: 768px )
+                    font-size: 18px
+
+        .col-12
+            margin-bottom: 1rem
+
+            @media screen and ( min-width: 768px )
+                margin-bottom: 0
+
+        a
+            @media screen and ( min-width: 768px )
+                font-size: 18px
+
+        button
+            @media screen and ( min-width: 768px )
+                &:hover
+                    opacity: 0.3
+                    color: white
+
+    #statistics
+        text-align: center
+        padding: 3rem 0
+
+        #introduction
+            padding: 4rem 0
+
+            h2
+                font-weight: 700
+
+        #cards
+            display: flex
+            flex-direction: column
+            gap: 4rem
+
+            @media screen and ( min-width: 768px )
+                flex-direction: row
+                gap: 0rem
+
+            .card
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                @media screen and ( min-width: 768px )
+
+                h5
+                    font-weight: 700
+
+                .card-img
+                    margin-top: -2.2rem
+                    background: rgb(58, 48, 83)
+                    border-radius: 50%
+                    width: 70px
+                    height: 70px
+                    padding: 1rem
+
+                    .card-img-top
+                        width: 35px

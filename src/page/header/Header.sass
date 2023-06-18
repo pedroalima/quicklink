@@ -1,42 +1,20 @@
 @use '../../style/variables'
 
-.header
-    position: relative
-    padding: 1rem 0
+.navbar-menu
+    text-align: center
+    border-radius: 10px
+
+    padding: 2.1rem 1.5rem
+    margin: 1rem 0
+    background: rgb(58, 48, 83)
 
     @media screen and ( min-width: 990px )
         padding: 0
+        margin: 0
+        background: none
 
-    .navbar-menu
-        // position: absolute
-        // top: 3rem
-        // left: -40%
-        // transform: translate(50%, 0%)
-        // z-index: 5
-        // width: 88%
-        text-align: center
-        background: variables.$mobile-menu-bg
-        border-radius: 10px
-        padding: 2.1rem 1.5rem
-        margin: 1rem 0
+hr
+    opacity: 0.3
 
-        @media screen and ( min-width: 990px )
-            background: none
-            color: red
-
-        hr
-            background: variables.$font-secondary-color
-            opacity: 0.3
-
-        .form
-            gap: 0.5rem
-
-            .btn-costumer
-                background: variables.$element-effects
-                padding: 0.5rem
-
-                @media screen and ( min-width: 990px )
-                    padding: 0.5rem 1rem
-
-                    &:hover
-                        opacity: 0.3
+.form
+    gap: 0.5rem

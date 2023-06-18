@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import './style/App.sass'
 import Header from './page/header/Header'
 import Banner from './page/banner_section/Banner';
+import Shortener from './page/shortener_section/Shortener';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
       <Header typeDisplay={typeDisplay} />
 	<main>
 		<Banner typeDisplay={typeDisplay} />
+		<Shortener />
 	</main>
     </div>
   )
