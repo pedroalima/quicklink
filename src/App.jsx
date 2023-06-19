@@ -23,9 +23,10 @@ function App() {
 	<main>
 		<Banner typeDisplay={typeDisplay} />
 		<Shortener />
+		<Amplify />
 	</main>
 	<footer>
-		<Amplify />
+		
 	</footer>
     </div>
   )
