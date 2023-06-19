@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from './page/header/Header'
 import Banner from './page/banner_section/Banner';
 import Shortener from './page/shortener_section/Shortener';
+import Amplify from './page/amplify_section/Amplify';
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
 		<Banner typeDisplay={typeDisplay} />
 		<Shortener />
 	</main>
+	<footer>
+		<Amplify />
+	</footer>
     </div>
   )
 }
