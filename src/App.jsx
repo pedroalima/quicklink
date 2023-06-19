@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import Header from './page/header/Header'
+import Header from './page/header/Header';
 import Banner from './page/banner_section/Banner';
 import Shortener from './page/shortener_section/Shortener';
 import Amplify from './page/amplify_section/Amplify';
+import Footer from './page/footer/footer';
 
 function App() {
 
@@ -25,9 +26,7 @@ function App() {
 		<Shortener />
 		<Amplify />
 	</main>
-	<footer>
-		
-	</footer>
+	<Footer/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import './Amplify.sass'
 
 function Amplify() {
   return (
-    <section className="jumbotron jumbotron-fluid bg-tertiary-color py-5 py-md-3" id='amplify'>
+    <section className="jumbotron jumbotron-fluid bg-tertiary-color mb-0 py-5 py-md-3" id='amplify'>
         <div className="container text-center py-5">
             <h3 className="font-primary-color font-weight-bold py-2 py-md-2">Boost your links today</h3>
             <a 
