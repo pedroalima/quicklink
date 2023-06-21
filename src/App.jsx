@@ -5,6 +5,8 @@ import Shortener from './page/shortener_section/Shortener';
 import Amplify from './page/amplify_section/Amplify';
 import Footer from './page/footer/footer';
 
+
+
 function App() {
 
   const [typeDisplay, setTypeDisplay] = useState();
